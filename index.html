@@ -1,71 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-  </head>
-
-  <body style="background-color: black">
-    <div
-      id="root"
-      style="margin-left: 400px;"
-    ></div>
+     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body style="background-color: black;">
+    <div id="root" style="background-color: gray; padding: 40px; width: 350px; margin-left: 300px; height: '300px';"></div>
     <script>
-      let card = React.createElement(
-        "div",
-        {
-          style: {
-            width: "300px",
-            height: "450px",
-            padding: "30px",
-            backgroundColor: "white",
-            boxShadow: "0 0 10px black",
-            borderRadius: "10px",
-          },
-        },
-        [
-          React.createElement("img", {
-            src: "https://th.bing.com/th/id/OIP.dsV-2Stil0Ivt7NrmT7hyAHaHa?pid=ImgDet&rs=1",
-            style: { width: "315px", height: "300px" },
-          }),
-          React.createElement(
-            "h2",
-            { style: { textAlign: "center" } },
-            "Khairul Alam"
-          ),
-          React.createElement(
-            "span",
-            { style: { marginLeft: "100px" } },
-            "Famouse Freelancer"
-          ),
-          React.createElement(
-            "div",
-            { style: { display: "flex", justifyContent: "space-around" } },
-            React.createElement("p", null, "26"),
-            React.createElement("p", null, "94"),
-            React.createElement("p", null, "139")
-          ),
-          React.createElement(
-            "div",
-            { style: { display: "flex", justifyContent: "space-around" } },
-            React.createElement("button", {style:{backgroundColor:"Pink",color:"white",borderRadius:"5px",border:"none"}}, "post"),
-            React.createElement("button", {style:{backgroundColor:"Pink",color:"white",borderRadius:"5px",border:"none"}}, "Following"),
-            React.createElement("button", {style:{backgroundColor:"Pink",color:"white",borderRadius:"5px",border:"none"}}, "Followers")
-          ),
-        ]
-      );
+        let card=React.createElement('div',{style:{width:'300px',height:'450px',padding:'30px',backgroundColor:'white',boxShadow:'0 0 10px black',borderRadius:'10px' }},[React.createElement('img',{src:'https://getmahadevproducts.in/wp-content/webp-express/webp-images/uploads/2021/07/Pretty-Fashionable-Men-Tshirts-1.jpg.webp',style:{width:'315px',height:'300px'}}),React.createElement('h2',{style:{textAlign:'center'}},'Dima Blover'),React.createElement('span',{style:{marginLeft:'100px'}},'UI/UX Designer'),React.createElement('div',{style:{display:'flex',justifyContent:'space-around'}},React.createElement('p',null,'26'),React.createElement('p',null,'94'),React.createElement('p',null,'139')),React.createElement('div',{style:{display:'flex',justifyContent:'space-around'}},React.createElement('h3',null,'Shoot'),React.createElement('h3',null,'Following'),React.createElement('h3',null,'Followers'))])
 
-      ReactDOM.render(card, document.getElementById("root"));
+        ReactDOM.render(card,document.getElementById('root'))
     </script>
-  </body>
+</body>
 </html>
